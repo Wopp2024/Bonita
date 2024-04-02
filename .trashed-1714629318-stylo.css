@@ -1,0 +1,57 @@
+{ 
+  margin: 0;
+  
+  padding: 0;
+  
+  box-sizing: boder-box;
+}
+
+body {
+  background-color: #FF0000;
+}
+.slider-box{
+  aspect-ratio: 10 /16;
+  width: 1000px;
+  height: auto;
+  margin: 50px auto 0;
+  overflow: hidden; 
+  
+  
+}
+.slider-box ul{
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 15s infinite alternate ease-in-out;
+  
+  
+}
+.slider-box li{
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+
+.slider-box img{
+  width: 50px;
+  height: 80px;
+  position: absolute;
+  top: 35px;
+  left: 125px;
+  border-radius: 8px;
+  text-align: center;
+  
+}
+@keyframes slide{
+  from{
+    transform: rotateY(360deg) translateZ(100px);
+    z-index: 10;
+  }
+  50%{
+    z-index: -10;
+  }
+  to{
+    transform: ratateX(0deg) translateZ(100px);
+  }
+}
+  

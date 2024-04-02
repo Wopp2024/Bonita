@@ -1,0 +1,75 @@
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff0000;
+}
+
+.container{
+  perspective: 250px;
+  width: 300px;
+  height: 150px;
+  position: relative;
+}
+
+.tarjeta{
+  width: 50px;
+  height: 80px;
+  font-size: 40px;
+  position: absolute;
+  top: 35px;
+  left: 125px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  animation: carrusel 16s linear infinite;
+  
+}
+
+@keyframes carrusel{
+  from {
+    transform: rotateY(360deg) translateZ(100px);
+    z-index: 10;
+    opacity: 0.9px;
+  }
+  50%{
+    z-index: -10;
+  }
+  to{
+    transform: rotateY(0deg) translateZ(100px);
+  }
+}
+
+#imagen8{
+  background-size: cover;
+}
+#imagen7{
+  background-size: cover;
+  animation-delay: -2s;
+}
+#imagen6{
+  background-size: cover;
+  animation-delay: -4s;
+}
+#imagen5{
+  background-size: cover;
+  animation-delay: -6s;
+}
+#imagen4{
+  background-size: cover;
+  animation-delay: -8s;
+}
+#imagen3{
+  background-size: cover;
+  animation-delay: -10s;
+}
+#imagen2{
+  background-size: cover;
+  animation-delay: -12s;
+}
+#imagen1{
+  background-size: cover;
+  animation-delay: -14s;
+  
+}
